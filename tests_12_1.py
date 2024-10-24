@@ -22,9 +22,9 @@ class RunnerTest(unittest.TestCase):
 
     def test_walk(self):
         runner = Runner("John")
-        for _ in range(5): # Изменено с 10 на 5
+        for _ in range(10): 
             runner.walk()
-        self.assertEqual(runner.distance, 50)# Тест не пройдет
+        self.assertEqual(runner.distance, 50)
 
     def test_run(self):
         runner = Runner("Bolt")
